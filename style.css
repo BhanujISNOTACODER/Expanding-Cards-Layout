@@ -1,0 +1,44 @@
+*,*::after,*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cont{
+    display: flex;
+    width: 90vw;
+    /* border: 2px solid red; */
+    
+}
+.panel{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 4px 10px;
+    min-height: 80vh;
+    color: white;
+    border-radius: 50px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.5s ease-in;
+}
+.active{
+    flex: 5;
+}
+.panel>h3{
+font-size: 25px;
+position: absolute;
+left:20px;
+bottom: 30px;
+opacity: 0;
+}
+.active>h3{
+ opacity: 1;
+ transition: opacity 0.6s ease-in 0.6s;
+}
